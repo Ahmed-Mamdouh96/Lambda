@@ -19,9 +19,9 @@ public class LambdaTest  {
        String s1="abcddfsdefsadssfdgfghf";
        String s2="abccsfsgdhfjghljh";
        String Longer= StringUtils.betterString(s1, s2, ((t, u) -> t.length() < u.length()));
-     
+       String First = StringUtils.betterString(s1, s2,(t, u) -> true);
         System.out.println(Longer);
-       
+        System.out.println(First);
     }
     
         
